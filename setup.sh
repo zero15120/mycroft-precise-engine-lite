@@ -58,6 +58,6 @@ if [ "$arch" = "armv7l" ] && ! has_piwheels; then
     install_piwheels
 fi
 
-pip3 install -e tflite_runtime-*.whl
+pip3 install tflite_runtime-*.whl
 pip install -e runner/
 pip install -e .
