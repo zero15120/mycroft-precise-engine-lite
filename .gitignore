@@ -12,9 +12,6 @@ __pycache__/
 /.pytest_cache/
 
 *.pyc
-*.pb
-*.params
-*.net
 *.json
 *.pbtxt
 *.txt
