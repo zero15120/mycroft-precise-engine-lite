@@ -40,11 +40,7 @@ os=$(uname -s)
 if [ "$os" = "Linux" ]; then
     if is_command apt-get; then
         wait_for_apt
-        sudo apt-get install -y python3-pip curl libopenblas-dev python3-scipy cython portaudio19-dev swig libpulse-dev libatlas-base-dev
-    fi
-elif [ "$os" = "Darwin" ]; then
-    if is_command brew; then
-        brew install portaudio
+        sudo apt-get install -y python3-pip curl libopenblas-dev python3-scipy cython swig libpulse-dev libatlas-base-dev
     fi
 fi
 
