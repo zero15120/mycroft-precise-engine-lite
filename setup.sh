@@ -34,7 +34,7 @@ extra-index-url=https://www.piwheels.org/simple
 set -e; cd "$(dirname "$0")" # Script Start #
 #############################################
 
-VENV=${VENV-$(pwd)/.venv}
+VENV=${VENV-$(pwd)/../env}
 
 os=$(uname -s)
 if [ "$os" = "Linux" ]; then
