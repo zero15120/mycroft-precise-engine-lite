@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 tar_name() {
     local tar_prefix=$1
     echo "${tar_prefix}_$(precise-engine --version 2>&1)_$(uname -m).tar.gz"
@@ -49,7 +48,7 @@ package_scripts() {
 set -eE
 
 ./setup.sh
-source .venv/bin/activate
+source ../env/bin/activate
 pip install pyinstaller
 
 all_scripts=$(grep -oP '(?<=precise.scripts.)[a-z_]+' setup.py)
